@@ -1,5 +1,5 @@
 # Kung Fu Panda Theme
 
 
-This repositoryu will include a theme for kung fu panda, ENJOY!!!
+This repository will include a theme for kung fu panda, ENJOY!!!
 -------------------------------------------------------------------
