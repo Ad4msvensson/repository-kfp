@@ -116,31 +116,25 @@
 {% endblock %}
 
 {% block content %}
-        <div id="main" class="{{ container }}">
-          {{ page.breadcrumb }}
-          <div class="row row-offcanvas row-offcanvas-left clearfix bg-primary ">
-              <main{{ content_attributes }}>
-                <section class="section">
-                  <a href="#main-content" id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
-                </section>
-              </main>
-            {% if sidebar_first_exists %}
-              <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_first }}
-                </aside>
-              </div>
-            {% endif %}
-            {% if sidebar_second_exists %}
-              <div{{ sidebar_second_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_second }}
-                </aside>
-              </div>
-            {% endif %}
-          </div>
-        </div>
+ <div class="Factos row"> 
+  <div class="Fact_1 bg-primary col">
+   <h1 class="het">Facts 1: Kung Fu Panda is an animated film franchise.</h1>
+   <p>Kung Fu Panda is a beloved animated film series that has captured the hearts of millions worldwide. The franchise revolves around the adventures of Po, a bumbling panda who becomes the legendary Dragon Warrior.</p>
+  </div>
+  <div class="Fact_2 bg-primary col">
+   <h1 class="het">Facts 2: The first movie was released in 2008.</h1>
+   <p>Kung Fu Panda was first introduced to audiences in 2008, captivating viewers with its humor, stunning animation, and compelling storyline. It was an instant hit, grossing over $600 million worldwide.</p>
+  </div>
+  <div class="Fact_3 bg-primary col">
+   <h1 class="het">Facts 3: There are three movies in the Kung Fu Panda series.</h1>
+   <p>The success of the first film spawned two sequels, with Kung Fu Panda 2 released in 2011 and Kung Fu Panda 3 in Each installment continued to delight fans with its exciting action sequences and lovable characters.</p>
+  </div>
+  <div class="Fact_4 bg-primary col">
+   <h1 class="het">Facts 4: The voice cast includes top Hollywood talent.</h1>
+   <p>The films boast an impressive voice cast, with actors such as Jack Black, Angelina Jolie, Dustin Hoffman, and Jackie Chan lending their voices to bring the characters to life. This star-studded lineup has contributed to the franchise’s popularity.</p>
+  </div>
+ </div>    
+
 {% endblock %}
 
 {% block footer %}
