@@ -73,49 +73,16 @@
 {% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
 
 {% block head %}
-        {% if page.secondary_menu or page.top_header or page.top_header_form %}
-          <nav{{ navbar_top_attributes }}>
-          {% if container_navbar %}
-          <div class="container bg-primary">
-          {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form bg-primary float-right">
-                  {{ page.top_header_form }}
-                </div>
-              {% endif %}
-          {% if container_navbar %}
-          </div>
-          {% endif %}
-          </nav>
-        {% endif %}
-        <nav{{ navbar_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-            {{ page.header }}
-            {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="CollapsingNavbar">
-                {{ page.primary_menu }}
-                {% if page.header_form %}
-                  <div class="form-inline navbar-form float-right">
-                    {{ page.header_form }}
-                  </div>
-                {% endif %}
-	          </div>
-            {% endif %}
-            {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-            {% endif %}
-          {% if container_navbar %}
-          </div>
-          {% endif %}
-        </nav>
+  <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
 {% endblock %}
 
 {% block content %}
+<div class="back">
  <div class="Factos row"> 
   <div class="Fact_1 bg-primary col">
    <h1 class="het">Facts 1: Kung Fu Panda is an animated film franchise.</h1>
@@ -125,6 +92,8 @@
    <h1 class="het">Facts 2: The first movie was released in 2008.</h1>
    <p>Kung Fu Panda was first introduced to audiences in 2008, captivating viewers with its humor, stunning animation, and compelling storyline. It was an instant hit, grossing over $600 million worldwide.</p>
   </div>
+ </div> 
+ <div class="Factos row"> 
   <div class="Fact_3 bg-primary col">
    <h1 class="het">Facts 3: There are three movies in the Kung Fu Panda series.</h1>
    <p>The success of the first film spawned two sequels, with Kung Fu Panda 2 released in 2011 and Kung Fu Panda 3 in Each installment continued to delight fans with its exciting action sequences and lovable characters.</p>
@@ -134,6 +103,7 @@
    <p>The films boast an impressive voice cast, with actors such as Jack Black, Angelina Jolie, Dustin Hoffman, and Jackie Chan lending their voices to bring the characters to life. This star-studded lineup has contributed to the franchise’s popularity.</p>
   </div>
  </div>    
+</div> 
 
 {% endblock %}
 
